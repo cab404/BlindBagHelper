@@ -20,38 +20,58 @@ import me.katefiore.mlpblindbaghelper.base.StringUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class Blindbags extends Activity {
+
 	SearchAdapter search_adapter;
+	List<String> waves;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
 		ListView list = (ListView) findViewById(R.id.results);
+
+		try {
+			waves = Arrays.asList(getAssets().list(BlindbagCollectionParser.WAVES));
+		} catch (IOException e) {
+			throw new RuntimeException("OK, no assets.", e);
+		}
+
+		/* Выбиралка волны */
+		ListView select_wave = (ListView) findViewById(R.id.wave_menu).findViewById(R.id.waves);
+		select_wave.setAdapter(new WaveListAdapter(waves));
+
 		search_adapter = new SearchAdapter();
 		list.setAdapter(search_adapter);
 
-		list.setEmptyView(LayoutInflater.from(list.getContext()).inflate(R.layout.filler, list, false));
+		list.setEmptyView(LayoutInflater.from(list.getContext()).inflate(R.layout.wave, list, false));
 
+		/* Ищем при изменении запроса. */
 		((EditText) findViewById(R.id.request)).addTextChangedListener(new TextWatcher() {
-			@Override public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-			}
-			@Override public void onTextChanged(CharSequence s, int start, int before, int count) {
-				if (s.length() == 0)
-					search_adapter.clear();
-				else
-					search_adapter.search(s.toString());
-
-			}
+			@Override public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+			@Override public void onTextChanged(CharSequence s, int start, int before, int count) {}
 			@Override public void afterTextChanged(Editable s) {
-
+				if (s.length() == 0) {
+					findViewById(R.id.wave_menu).setVisibility(View.VISIBLE);
+					search_adapter.clear();
+				} else {
+					findViewById(R.id.wave_menu).setVisibility(View.GONE);
+					search_adapter.search(s.toString());
+				}
 			}
 		});
 
+
+	}
+
+	private void search(String term) {
+		((EditText) findViewById(R.id.request)).setText(term);
+		search_adapter.search(term);
 	}
 
 	/**
@@ -146,6 +166,63 @@ public class Blindbags extends Activity {
 		@Override public void unregisterDataSetObserver(DataSetObserver observer) {
 			if (observer != null)
 				super.unregisterDataSetObserver(observer);
+		}
+
+	}
+
+	/**
+	 * Выьиралка волны.
+	 */
+	private class WaveListAdapter extends BaseAdapter {
+		private List<String> list;
+		public WaveListAdapter(List<String> list) {
+			this.list = list;
+		}
+		@Override public int getCount() {
+			return list.size();
+		}
+		@Override public Object getItem(int position) {
+			return list.get(position);
+		}
+		@Override public long getItemId(int position) {
+			return position;
+		}
+		@Override public View getView(int position, View convertView, ViewGroup parent) {
+
+			final String wave = list.get(position);
+			if (convertView == null)
+				convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.wave, parent, false);
+
+			((TextView) convertView.findViewById(R.id.title)).setText(getString(R.string.wave) + " " + wave);
+
+			/* Пытаемся достать картинку из asset-ов и выставить. */
+			try {
+				((ImageView) convertView.findViewById(R.id.image))
+						.setImageDrawable(
+								new BitmapDrawable(getResources(),
+										BitmapFactory.decodeStream(
+												getAssets()
+														.open(
+																BlindbagCollectionParser.WAVES + "/"
+																		+ wave + "/"
+																		+ "bag.jpg"
+														)
+										)
+								)
+						);
+			} catch (IOException e) {
+				/* если картинка не найдена, ставим иконку приложения. Лол.*/
+				Log.w("WaveListAdapter", "Не найдена картинка для " + wave);
+				((ImageView) convertView.findViewById(R.id.image)).setImageResource(R.drawable.ic_launcher);
+			}
+
+			convertView.setOnClickListener(new View.OnClickListener() {
+				@Override public void onClick(View v) {
+					search("wave:" + wave);
+				}
+			});
+
+			return convertView;
 		}
 	}
 

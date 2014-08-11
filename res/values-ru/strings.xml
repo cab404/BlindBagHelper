@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">BlindBagHelper</string>
+	<string name="choose_wave">…или выберете волну</string>
+	<string name="wave">Волна</string>
+	<string name="search">Введите запрос…</string>
+
+</resources>
