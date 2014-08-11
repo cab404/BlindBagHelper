@@ -1,0 +1,8 @@
+out/
+build/
+*.iml
+gen/
+bin/
+.idea/
+.navigation/
+.gradle/

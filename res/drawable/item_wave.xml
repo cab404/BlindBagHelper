@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+@author cab404
+Фон с небольшой тенью внизу.
+-->
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+       android:insetTop="-2dp"
+       android:insetRight="-2dp">
+	<shape>
+		<solid android:color="#FFF"/>
+		<corners android:radius="2dp"/>
+	</shape>
+</inset>
