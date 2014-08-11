@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">BlindBagHelper</string>
-	<string name="choose_wave">…или выберете волну</string>
 	<string name="wave">Волна</string>
+
 	<string name="search">Введите запрос…</string>
+	<string name="choose_wave">…или выберете волну</string>
+
+	<string name="help_text">
+		Приложение поможет выбрать из Blind Bag\'ов именно ту пони, которую вы хотите. Введите номер со шва пакета
+		(можно использовать звездочки вместо нечитаемых цифр) или найдите его в списке конкретной волны. Кроме того, вы
+		можете ввести в строку поиска имя пони.
+		На картинках ниже показано, где искать номер пакетика:
+	</string>
+
+	<string name="rate">Оценить приложение</string>
 
 </resources>

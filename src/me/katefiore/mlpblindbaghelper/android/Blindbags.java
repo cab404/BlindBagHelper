@@ -1,6 +1,7 @@
 package me.katefiore.mlpblindbaghelper.android;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.DataSetObserver;
 import android.graphics.BitmapFactory;
 import android.graphics.PorterDuff;
@@ -49,7 +50,9 @@ public class Blindbags extends Activity {
 		search_adapter = new SearchAdapter();
 		list.setAdapter(search_adapter);
 
-		list.setEmptyView(LayoutInflater.from(list.getContext()).inflate(R.layout.wave, list, false));
+		TextView textView = new TextView(this);
+
+		list.setEmptyView(textView);
 
 		/* Ищем при изменении запроса. */
 		((EditText) findViewById(R.id.request)).addTextChangedListener(new TextWatcher() {
@@ -67,6 +70,10 @@ public class Blindbags extends Activity {
 		});
 
 
+	}
+
+	public void help(View view) {
+		startActivity(new Intent(this, Help.class));
 	}
 
 	private void search(String term) {
@@ -205,7 +212,7 @@ public class Blindbags extends Activity {
 														.open(
 																BlindbagCollectionParser.WAVES + "/"
 																		+ wave + "/"
-																		+ "bag.jpg"
+																		+ "bag.png"
 														)
 										)
 								)

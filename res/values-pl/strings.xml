@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">MLP Blind Bag Helper</string>
+
+	<string name="wave">Wave</string>
+
+	<string name="search">Wyszukaj</string>
+	<string name="choose_wave">…or choose a wave.</string>
+
+	<string name="help_text">Ta prosta aplikacja pomoże Ci wybrać kucyka z saszetki Blind Bag. Wprowadź numer z saszetki
+		lub imię kucyka i naciśnij \"Wyszukaj\" lub wybierz numer serii. Jeśli nie możesz odczytać numerów, możesz
+		wprowadzić liczbę gwiazdek im równą. Poniżej znajdziesz przykłady pokazujące, gdzie możesz znaleźć nadrukowane
+		na saszetkach numery/litery:
+	</string>
+
+</resources>
