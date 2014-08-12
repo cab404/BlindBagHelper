@@ -73,7 +73,6 @@ public class Blindbags extends Activity {
 
 	private void search(String term) {
 		((EditText) findViewById(R.id.request)).setText(term);
-		search_adapter.search(term);
 	}
 
 	/**
