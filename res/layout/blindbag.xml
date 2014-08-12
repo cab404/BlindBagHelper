@@ -24,21 +24,6 @@
 				android:id="@+id/image"
 				android:src="@drawable/ic_launcher"
 				android:padding="4dp"/>
-		<TextView
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:id="@+id/wave"
-				android:background="@drawable/item_wave"
-				android:textColor="#FFFFFF"
-
-				android:paddingLeft="8dp"
-				android:paddingRight="8dp"
-				android:paddingTop="4dp"
-				android:paddingBottom="4dp"
-
-				android:gravity="center"
-				android:textStyle="bold"
-				android:text="@string/wave"/>
 	</LinearLayout>
 	<LinearLayout
 			android:orientation="vertical"
@@ -64,6 +49,13 @@
 				android:paddingRight="8dp"
 				android:textSize="24sp"
 				android:text="@string/choose_wave"/>
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/wave"
+
+				android:textStyle="bold"
+				android:text="@string/wave"/>
 	</LinearLayout>
 
 </LinearLayout>

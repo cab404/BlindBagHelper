@@ -4,6 +4,7 @@
 
 	<string name="search">Введите запрос…</string>
 	<string name="choose_wave">…или выберете волну</string>
+	<string name="help_button">Справка</string>
 
 	<string name="help_text">
 		Приложение поможет выбрать из Blind Bag\'ов именно ту пони, которую вы хотите. Введите номер со шва пакета

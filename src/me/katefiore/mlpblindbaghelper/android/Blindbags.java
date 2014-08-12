@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.DataSetObserver;
 import android.graphics.BitmapFactory;
-import android.graphics.PorterDuff;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.text.Editable;
@@ -158,8 +157,8 @@ public class Blindbags extends Activity {
 				((ImageView) convertView.findViewById(R.id.image)).setImageResource(R.drawable.ic_launcher);
 			}
 
-			convertView.findViewById(R.id.wave)
-					.getBackground().setColorFilter(blindbag.wave_color, PorterDuff.Mode.MULTIPLY);
+//			convertView.findViewById(R.id.wave)
+//					.getBackground().setColorFilter(blindbag.wave_color, PorterDuff.Mode.MULTIPLY);
 
 			return convertView;
 		}
