@@ -17,14 +17,8 @@
 			android:paddingRight="8dp"
 			android:paddingBottom="7dp"
 			android:drawableLeft="@android:drawable/ic_menu_search"
-			android:drawablePadding="2dp"/>
-	<include
-			android:layout_width="wrap_content"
-			android:layout_height="match_parent"
-			layout="@layout/wave_selection"
-			android:id="@+id/wave_menu"
-			android:layout_below="@+id/request"
-			android:layout_centerHorizontal="true"
+			android:drawablePadding="2dp"
+			android:singleLine="true"
 			/>
 	<ListView
 			android:layout_width="match_parent"
@@ -35,7 +29,14 @@
 			android:paddingLeft="8dp"
 			android:paddingRight="8dp"
 			android:layout_below="@+id/request"
-			android:visibility="visible"
+			/>
+	<include
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			layout="@layout/wave_selection"
+			android:id="@+id/wave_menu"
+			android:layout_below="@+id/request"
+			android:layout_centerHorizontal="true"
 			/>
 </RelativeLayout>
 

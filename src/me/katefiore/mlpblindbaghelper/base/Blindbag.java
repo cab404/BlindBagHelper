@@ -34,10 +34,9 @@ public class Blindbag implements Comparable<Blindbag> {
 	 * Тут у нас настройки сортировки
 	 */
 	@Override public int compareTo(Blindbag another) {
-		int wave_c = wave - another.wave;           /* От большего к меньшему */
-		int name_c = -another.name.compareTo(name); /* В алфавитном порядке */
-		int id_c = another.id.compareTo(id);
+		int wave_c = wave - another.wave;
+		int id_c = -another.id.compareTo(id);
 
-		return wave_c == 0 ? name_c == 0 ? id_c == 0 ? 0 : id_c : name_c : wave_c;
+		return wave_c == 0 ? id_c == 0 ? 0 : id_c : wave_c;
 	}
 }

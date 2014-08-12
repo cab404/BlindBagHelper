@@ -21,14 +21,13 @@ import me.katefiore.mlpblindbaghelper.base.StringUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class Blindbags extends Activity {
 
 	SearchAdapter search_adapter;
-	List<String> waves;
+	List<Integer> waves;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -37,24 +36,21 @@ public class Blindbags extends Activity {
 
 		ListView list = (ListView) findViewById(R.id.results);
 
-		try {
-			waves = Arrays.asList(getAssets().list(BlindbagCollectionParser.WAVES));
-		} catch (IOException e) {
-			throw new RuntimeException("OK, no assets.", e);
-		}
-
-		/* Выбиралка волны */
-		ListView select_wave = (ListView) findViewById(R.id.wave_menu).findViewById(R.id.waves);
-		select_wave.setAdapter(new WaveListAdapter(waves));
-
+		/* Поисковик по блайндбэгам */
 		search_adapter = new SearchAdapter();
 		list.setAdapter(search_adapter);
 
-		TextView textView = new TextView(this);
+		/* Выбиралка волны */
+		waves = new ArrayList<>();
+		for (Blindbag bag : search_adapter.query)
+			if (!waves.contains(bag.wave))
+				waves.add(bag.wave);
+		Collections.sort(waves);
 
-		list.setEmptyView(textView);
+		ListView select_wave = (ListView) findViewById(R.id.wave_menu).findViewById(R.id.waves);
+		select_wave.setAdapter(new WaveListAdapter(waves));
 
-		/* Ищем при изменении запроса. */
+		/* Включаем поиск при изменении запроса. */
 		((EditText) findViewById(R.id.request)).addTextChangedListener(new TextWatcher() {
 			@Override public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 			@Override public void onTextChanged(CharSequence s, int start, int before, int count) {}
@@ -90,7 +86,7 @@ public class Blindbags extends Activity {
 
 		public SearchAdapter() {
 			query = new BlindbagCollectionParser(Blindbags.this).parse();
-			reduced = new ArrayList<Blindbag>();
+			reduced = new ArrayList<>();
 		}
 
 		public void search(String request) {
@@ -134,9 +130,12 @@ public class Blindbags extends Activity {
 			}
 
 			/* Выставляем всякую фигню. */
-			((TextView) convertView.findViewById(R.id.id)).setText(blindbag.id);
-			((TextView) convertView.findViewById(R.id.title)).setText(blindbag.name);
-			((TextView) convertView.findViewById(R.id.wave)).setText(getString(R.string.wave) + " " + blindbag.wave);
+			((TextView) convertView.findViewById(R.id.id))
+					.setText(blindbag.id.toUpperCase());
+			((TextView) convertView.findViewById(R.id.title))
+					.setText(blindbag.name);
+			((TextView) convertView.findViewById(R.id.wave))
+					.setText(getString(R.string.wave) + " " + blindbag.wave);
 
 			/* Пытаемся достать картинку из asset-ов и выставить. */
 			try {
@@ -177,12 +176,18 @@ public class Blindbags extends Activity {
 
 	}
 
+	@Override public void onBackPressed() {
+		if (((EditText) findViewById(R.id.request)).getText().length() == 0)
+			super.onBackPressed();
+		else
+			((EditText) findViewById(R.id.request)).setText("");
+	}
 	/**
-	 * Выьиралка волны.
+	 * Выбиралка волны.
 	 */
 	private class WaveListAdapter extends BaseAdapter {
-		private List<String> list;
-		public WaveListAdapter(List<String> list) {
+		private List<Integer> list;
+		public WaveListAdapter(List<Integer> list) {
 			this.list = list;
 		}
 		@Override public int getCount() {
@@ -196,7 +201,7 @@ public class Blindbags extends Activity {
 		}
 		@Override public View getView(int position, View convertView, ViewGroup parent) {
 
-			final String wave = list.get(position);
+			final int wave = list.get(position);
 			if (convertView == null)
 				convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.wave, parent, false);
 
