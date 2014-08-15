@@ -1,25 +1,29 @@
-#c77353
-80216: Pinkie Pie
-80226: Fluttershy
-80236: Twilight Sparkle (3D Gem symbol)
-80246: Rainbow Dash
-80256: Rarity
-80266: Applejack
-80276: Minuette
-80286: Roseluck
-80296: Trixie Lulamoon II (3D Gem symbol)
-81206: Twilight Velvet (3D Gem symbol)
-81216: Mosely Orange
-81226: Berry Green
-81236: Merry May
-81246: Cherry Spices II
-81256: Electric Sky
-81266: Crimson Gala
-81276: Amethyst Star
-81286: Twilight Sky
-81296: Sassaflash
-82206: Magnet Bolt
-82216: Royal Riff
-82226: Peachy Sweet
-82236: Chance-A-Lot
-82246: Shoeshine
+{        
+    "color": "#c77353",    
+    "entries": [    
+        {"id": "80216", "name": "Pinkie Pie", "images":[]},
+        {"id": "80226", "name": "Fluttershy", "images":[]},
+        {"id": "80236", "name": "Twilight Sparkle (3D Gem symbol)", "images":[]},
+        {"id": "80246", "name": "Rainbow Dash", "images":[]},
+        {"id": "80256", "name": "Rarity", "images":[]},
+        {"id": "80266", "name": "Applejack", "images":[]},
+        {"id": "80276", "name": "Minuette", "images":[]},
+        {"id": "80286", "name": "Roseluck", "images":[]},
+        {"id": "80296", "name": "Trixie Lulamoon II (3D Gem symbol)", "images":[]},
+        {"id": "81206", "name": "Twilight Velvet (3D Gem symbol)", "images":[]},
+        {"id": "81216", "name": "Mosely Orange", "images":[]},
+        {"id": "81226", "name": "Berry Green", "images":[]},
+        {"id": "81236", "name": "Merry May", "images":[]},
+        {"id": "81246", "name": "Cherry Spices II", "images":[]},
+        {"id": "81256", "name": "Electric Sky", "images":[]},
+        {"id": "81266", "name": "Crimson Gala", "images":[]},
+        {"id": "81276", "name": "Amethyst Star", "images":[]},
+        {"id": "81286", "name": "Twilight Sky", "images":[]},
+        {"id": "81296", "name": "Sassaflash", "images":[]},
+        {"id": "82206", "name": "Magnet Bolt", "images":[]},
+        {"id": "82216", "name": "Royal Riff", "images":[]},
+        {"id": "82226", "name": "Peachy Sweet", "images":[]},
+        {"id": "82236", "name": "Chance-A-Lot", "images":[]},
+        {"id": "82246", "name": "Shoeshine", "images":[]}
+    ]    
+}        

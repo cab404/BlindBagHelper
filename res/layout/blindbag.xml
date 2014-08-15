@@ -48,7 +48,8 @@
 				android:gravity="right"
 				android:paddingRight="8dp"
 				android:textSize="24sp"
-				android:text="@string/choose_wave"/>
+				android:text="@string/choose_wave"
+				android:textAllCaps="true"/>
 		<TextView
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"

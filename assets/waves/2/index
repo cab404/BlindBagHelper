@@ -1,25 +1,29 @@
-#DDAAAA
-01: Pinkie Pie
-02: Applejack
-03: Rainbow Dash
-04: Rarity
-05: Twilight Sparkle
-06: Fluttershy
-07: Feathermay
-08: Blossomforth
-09: Lulu Luck
-10: Star Swirl
-11: Tea Love
-12: Ribbon Heart
-13: Cheerilee
-14: Daisy Dreams
-15: Stardash
-16: Honeybelle
-17: Dewdrop Dazzle
-18: Rainbow Flash
-19: Pudding Pie
-20: Snowcatcher
-21: Twinkleshine
-22: Rarity (glittery/transparent)
-23: Applejack (glittery/transparent)
-24: Fluttershy (glittery/transparent)
+{
+    "color": "#DDAAAA",
+    "entries": [
+        {"id": "01", "name": "Pinkie Pie", "images":[]},
+        {"id": "02", "name": "Applejack", "images":[]},
+        {"id": "03", "name": "Rainbow Dash", "images":[]},
+        {"id": "04", "name": "Rarity", "images":[]},
+        {"id": "05", "name": "Twilight Sparkle", "images":[]},
+        {"id": "06", "name": "Fluttershy", "images":[]},
+        {"id": "07", "name": "Feathermay", "images":[]},
+        {"id": "08", "name": "Blossomforth", "images":[]},
+        {"id": "09", "name": "Lulu Luck", "images":[]},
+        {"id": "10", "name": "Star Swirl", "images":[]},
+        {"id": "11", "name": "Tea Love", "images":[]},
+        {"id": "12", "name": "Ribbon Heart", "images":[]},
+        {"id": "13", "name": "Cheerilee", "images":[]},
+        {"id": "14", "name": "Daisy Dreams", "images":[]},
+        {"id": "15", "name": "Stardash", "images":[]},
+        {"id": "16", "name": "Honeybelle", "images":[]},
+        {"id": "17", "name": "Dewdrop Dazzle", "images":[]},
+        {"id": "18", "name": "Rainbow Flash", "images":[]},
+        {"id": "19", "name": "Pudding Pie", "images":[]},
+        {"id": "20", "name": "Snowcatcher", "images":[]},
+        {"id": "21", "name": "Twinkleshine", "images":[]},
+        {"id": "22", "name": "Rarity (glittery/transparent)", "images":[]},
+        {"id": "23", "name": "Applejack (glittery/transparent)", "images":[]},
+        {"id": "24", "name": "Fluttershy (glittery/transparent)", "images":[]}
+    ]
+}

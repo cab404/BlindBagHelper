@@ -16,6 +16,7 @@ import android.widget.*;
 import me.katefiore.mlpblindbaghelper.R;
 import me.katefiore.mlpblindbaghelper.base.Blindbag;
 import me.katefiore.mlpblindbaghelper.base.BlindbagCollectionParser;
+import me.katefiore.mlpblindbaghelper.base.Static;
 import me.katefiore.mlpblindbaghelper.base.StringUtils;
 
 import java.io.IOException;
@@ -35,13 +36,16 @@ public class Blindbags extends Activity {
 
 		ListView list = (ListView) findViewById(R.id.results);
 
+		Static.index = new BlindbagCollectionParser(Blindbags.this).parse();
+		;
+
 		/* Поисковик по блайндбэгам */
 		search_adapter = new SearchAdapter();
 		list.setAdapter(search_adapter);
 
 		/* Выбиралка волны */
 		waves = new ArrayList<>();
-		for (Blindbag bag : search_adapter.query)
+		for (Blindbag bag : Static.index)
 			if (!waves.contains(bag.wave))
 				waves.add(bag.wave);
 		Collections.sort(waves);
@@ -79,11 +83,9 @@ public class Blindbags extends Activity {
 	 * Занимается всяческим поиском.
 	 */
 	private class SearchAdapter extends BaseAdapter {
-		List<Blindbag> query;
 		List<Blindbag> reduced;
 
 		public SearchAdapter() {
-			query = new BlindbagCollectionParser(Blindbags.this).parse();
 			reduced = new ArrayList<>();
 		}
 
@@ -91,7 +93,7 @@ public class Blindbags extends Activity {
 			reduced.clear();
 
 			search:
-			for (Blindbag blindbag : query) {
+			for (Blindbag blindbag : Static.index) {
 				for (String part : StringUtils.splitToArray(request, ' '))
 					if (!blindbag.matchesPattern(part))
 						continue search;
@@ -120,16 +122,28 @@ public class Blindbags extends Activity {
 		}
 
 		@Override public View getView(int position, View convertView, ViewGroup parent) {
-			Blindbag blindbag = reduced.get(position);
+			final Blindbag blindbag = reduced.get(position);
 
 			if (convertView == null) {
 				LayoutInflater inflater = LayoutInflater.from(parent.getContext());
 				convertView = inflater.inflate(R.layout.blindbag, parent, false);
 			}
 
+			convertView.setOnClickListener(new View.OnClickListener() {
+				@Override public void onClick(View v) {
+					startActivity(
+							new Intent(Blindbags.this, BlindbagActivity.class)
+									.putExtra(
+											BlindbagActivity.BLINDBAG_INDEX,
+											Static.index.indexOf(blindbag)
+									)
+					);
+				}
+			});
+
 			/* Выставляем всякую фигню. */
 			((TextView) convertView.findViewById(R.id.id))
-					.setText(blindbag.id.toUpperCase());
+					.setText(blindbag.id);
 			((TextView) convertView.findViewById(R.id.title))
 					.setText(blindbag.name);
 			((TextView) convertView.findViewById(R.id.wave))

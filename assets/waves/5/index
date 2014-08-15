@@ -1,25 +1,29 @@
-#cab404
-70112: Twilight Sparkle
-70122: Princess Cadance
-70132: Sunny Rays
-70142: Junebug
-70152: Breezie
-70162: Island Rainbow
-70172: Princess Luna
-70182: Sapphire Shores
-70192: Rainbow Dash
-71102: Flippity Flop
-71112: Gardenia Glow
-71122: Skywishes
-71132: Trixie Lulamoon
-71142: Diamond Rose
-71152: Cinnamon Breeze
-71162: Ploomette
-71172: Golden Delicious
-71182: Ribbon Wishes
-71192: Princess Celestia
-72102: Fluttershy
-72112: Forsythia
-72122: Flitter Heart
-72132: Rainbow Wishes
-72142: Lyra Heartstrings
+{        
+    "color": "#cab404",    
+    "entries": [    
+        {"id": "70112", "name": "Twilight Sparkle", "images":[]},
+        {"id": "70122", "name": "Princess Cadance", "images":[]},
+        {"id": "70132", "name": "Sunny Rays", "images":[]},
+        {"id": "70142", "name": "Junebug", "images":[]},
+        {"id": "70152", "name": "Breezie", "images":[]},
+        {"id": "70162", "name": "Island Rainbow", "images":[]},
+        {"id": "70172", "name": "Princess Luna", "images":[]},
+        {"id": "70182", "name": "Sapphire Shores", "images":[]},
+        {"id": "70192", "name": "Rainbow Dash", "images":[]},
+        {"id": "71102", "name": "Flippity Flop", "images":[]},
+        {"id": "71112", "name": "Gardenia Glow", "images":[]},
+        {"id": "71122", "name": "Skywishes", "images":[]},
+        {"id": "71132", "name": "Trixie Lulamoon", "images":[]},
+        {"id": "71142", "name": "Diamond Rose", "images":[]},
+        {"id": "71152", "name": "Cinnamon Breeze", "images":[]},
+        {"id": "71162", "name": "Ploomette", "images":[]},
+        {"id": "71172", "name": "Golden Delicious", "images":[]},
+        {"id": "71182", "name": "Ribbon Wishes", "images":[]},
+        {"id": "71192", "name": "Princess Celestia", "images":[]},
+        {"id": "72102", "name": "Fluttershy", "images":[]},
+        {"id": "72112", "name": "Forsythia", "images":[]},
+        {"id": "72122", "name": "Flitter Heart", "images":[]},
+        {"id": "72132", "name": "Rainbow Wishes", "images":[]},
+        {"id": "72142", "name": "Lyra Heartstrings", "images":[]}
+    ]    
+}

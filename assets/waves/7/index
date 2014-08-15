@@ -1,25 +1,29 @@
-#9d3858
-90216: Pinkie Pie
-90226: Fluttershy
-90236: Twilight Sparkle
-90246: Rainbow Dash
-90256: Rarity
-90266: Applejack
-90276: Cherry Pie
-90286: Apple Fritter
-90296: Banana Fluff
-91206: Lilac Links
-91216: Cherry Fizzy
-91226: Misty Fly
-91236: Banana Bliss
-91246: Sweetie Drops
-91256: Holly Dash
-91266: Berry Dreams
-91276: Spitfire (misnamed as Soarin on card)
-91286: Lucky Clover
-91296: Lily Blossom
-92206: Apple Stars
-92216: Barber Groomsby
-92226: Caramel Apple
-92236: Soarin (misnamed as Spitfire on card)
-92246: Lily Valley
+{        
+    "color": "#9d3858",    
+    "entries": [    
+        {"id": "90216", "name": "Pinkie Pie", "images":[]},
+        {"id": "90226", "name": "Fluttershy", "images":[]},
+        {"id": "90236", "name": "Twilight Sparkle", "images":[]},
+        {"id": "90246", "name": "Rainbow Dash", "images":[]},
+        {"id": "90256", "name": "Rarity", "images":[]},
+        {"id": "90266", "name": "Applejack", "images":[]},
+        {"id": "90276", "name": "Cherry Pie", "images":[]},
+        {"id": "90286", "name": "Apple Fritter", "images":[]},
+        {"id": "90296", "name": "Banana Fluff", "images":[]},
+        {"id": "91206", "name": "Lilac Links", "images":[]},
+        {"id": "91216", "name": "Cherry Fizzy", "images":[]},
+        {"id": "91226", "name": "Misty Fly", "images":[]},
+        {"id": "91236", "name": "Banana Bliss", "images":[]},
+        {"id": "91246", "name": "Sweetie Drops", "images":[]},
+        {"id": "91256", "name": "Holly Dash", "images":[]},
+        {"id": "91266", "name": "Berry Dreams", "images":[]},
+        {"id": "91276", "name": "Spitfire (misnamed as Soarin on card)", "images":[]},
+        {"id": "91286", "name": "Lucky Clover", "images":[]},
+        {"id": "91296", "name": "Lily Blossom", "images":[]},
+        {"id": "92206", "name": "Apple Stars", "images":[]},
+        {"id": "92216", "name": "Barber Groomsby", "images":[]},
+        {"id": "92226", "name": "Caramel Apple", "images":[]},
+        {"id": "92236", "name": "Soarin (misnamed as Spitfire on card)", "images":[]},
+        {"id": "92246", "name": "Lily Valley", "images":[]}
+    ]    
+}        

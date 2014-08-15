@@ -1,25 +1,29 @@
-#3c4cae
-aa: Applejack
-ab: Big MacIntosh
-ac: Royal Riff
-ad: Mosely Orange
-ae: Gilda the Griffon
-af: Flam
-ag: Flim Skim
-ah: Fluttershy
-ai: Skywishes
-ak: Granny Smith
-al: Princess Cadance
-am: Golden Harvest
-an: Flower Wishes
-ao: Pinkie Pie
-ap: Sassaflash
-ar: Comet Tail
-as: Rainbow Dash
-at: Sunny Rays
-au: Gardenia Glow
-av: Lemon Hearts
-aw: Rarity
-ax: Ribbon Wishes
-ay: Lotus Blossom
-az: Twilight Sparkle
+{        
+    "color": "#3c4cae",    
+    "entries": [    
+        {"id": "aa", "name": "Applejack", "images":[]},
+        {"id": "ab", "name": "Big MacIntosh", "images":[]},
+        {"id": "ac", "name": "Royal Riff", "images":[]},
+        {"id": "ad", "name": "Mosely Orange", "images":[]},
+        {"id": "ae", "name": "Gilda the Griffon", "images":[]},
+        {"id": "af", "name": "Flam", "images":[]},
+        {"id": "ag", "name": "Flim Skim", "images":[]},
+        {"id": "ah", "name": "Fluttershy", "images":[]},
+        {"id": "ai", "name": "Skywishes", "images":[]},
+        {"id": "ak", "name": "Granny Smith", "images":[]},
+        {"id": "al", "name": "Princess Cadance", "images":[]},
+        {"id": "am", "name": "Golden Harvest", "images":[]},
+        {"id": "an", "name": "Flower Wishes", "images":[]},
+        {"id": "ao", "name": "Pinkie Pie", "images":[]},
+        {"id": "ap", "name": "Sassaflash", "images":[]},
+        {"id": "ar", "name": "Comet Tail", "images":[]},
+        {"id": "as", "name": "Rainbow Dash", "images":[]},
+        {"id": "at", "name": "Sunny Rays", "images":[]},
+        {"id": "au", "name": "Gardenia Glow", "images":[]},
+        {"id": "av", "name": "Lemon Hearts", "images":[]},
+        {"id": "aw", "name": "Rarity", "images":[]},
+        {"id": "ax", "name": "Ribbon Wishes", "images":[]},
+        {"id": "ay", "name": "Lotus Blossom", "images":[]},
+        {"id": "az", "name": "Twilight Sparkle", "images":[]}
+    ]    
+}        

@@ -1,25 +1,29 @@
-#3c4c38
-aa: Applejack
-ab: Big MacIntosh
-ac: Fluttershy II
-ad: Pinkie Pie
-ae: Rainbow Dash (rainbow accents)
-af: Rarity (rainbow accents)
-ag: Amethyst Star II
-ah: Shoeshine II
-ai: Noteworthy
-ak: Sea Swirl
-al: Berryshine II
-am: Princess Cadance II (rainbow accents)
-an: Peachy Sweet II
-ao: Lily Valley
-ap: Nurse Snowheart
-ar: Sprinkle Medley
-as: Tropical Storm
-at: Mr. Carrot Cake
-au: Green Jewel
-av: Lavender Fritter
-aw: Apple Honey
-ax: Honey Rays
-ay: Prism Glider
-az: Grape Delight
+{        
+    "color": "#3c4c38",    
+    "entries": [    
+        {"id": "aa", "name": "Applejack", "images":[]},
+        {"id": "ab", "name": "Big MacIntosh", "images":[]},
+        {"id": "ac", "name": "Fluttershy II", "images":[]},
+        {"id": "ad", "name": "Pinkie Pie", "images":[]},
+        {"id": "ae", "name": "Rainbow Dash (rainbow accents)", "images":[]},
+        {"id": "af", "name": "Rarity (rainbow accents)", "images":[]},
+        {"id": "ag", "name": "Amethyst Star II", "images":[]},
+        {"id": "ah", "name": "Shoeshine II", "images":[]},
+        {"id": "ai", "name": "Noteworthy", "images":[]},
+        {"id": "ak", "name": "Sea Swirl", "images":[]},
+        {"id": "al", "name": "Berryshine II", "images":[]},
+        {"id": "am", "name": "Princess Cadance II (rainbow accents)", "images":[]},
+        {"id": "an", "name": "Peachy Sweet II", "images":[]},
+        {"id": "ao", "name": "Lily Valley", "images":[]},
+        {"id": "ap", "name": "Nurse Snowheart", "images":[]},
+        {"id": "ar", "name": "Sprinkle Medley", "images":[]},
+        {"id": "as", "name": "Tropical Storm", "images":[]},
+        {"id": "at", "name": "Mr. Carrot Cake", "images":[]},
+        {"id": "au", "name": "Green Jewel", "images":[]},
+        {"id": "av", "name": "Lavender Fritter", "images":[]},
+        {"id": "aw", "name": "Apple Honey", "images":[]},
+        {"id": "ax", "name": "Honey Rays", "images":[]},
+        {"id": "ay", "name": "Prism Glider", "images":[]},
+        {"id": "az", "name": "Grape Delight", "images":[]}
+    ]    
+}        

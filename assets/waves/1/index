@@ -1,25 +1,29 @@
-#AACCCC
-20415: Pinkie Pie
-20425: Applejack
-20435: Rainbow Dash
-20445: Rarity
-20455: Twilight Sparkle
-20465: Fluttershy
-20475: Sugar Grape
-20485: Lily Blossom
-20495: Minty
-21405: Bumblesweet
-21415: Fizzypop
-21425: Flower Wishes
-21435: Roseluck
-21445: Sweetie Blue
-21455: Pepperdance
-21465: Lemon Hearts
-21475: Cherry Spices
-21485: Sweetie Swirl
-21495: Lucky Swirl
-22405: Sweetcream Scoops
-22415: Firecracker Burst
-22425: Pinkie Pie (glittery/transparent)
-22435: Twilight Sparkle (glittery/transparent)
-22445: Rainbow Dash (glittery/transparent)
+{
+    "color": "#AACCCC",
+    "entries": [
+        {"id": "20415", name: "Pinkie Pie", "images": ["20485.png", "20485.png", "20485.png"]},
+        {"id": "20425", name: "Applejack", "images": []},
+        {"id": "20435", name: "Rainbow Dash", "images": []},
+        {"id": "20445", name: "Rarity", "images": []},
+        {"id": "20455", name: "Twilight Sparkle", "images": []},
+        {"id": "20465", name: "Fluttershy", "images": []},
+        {"id": "20475", name: "Sugar Grape", "images": []},
+        {"id": "20485", name: "Lily Blossom", "images": []},
+        {"id": "20495", name: "Minty", "images": []},
+        {"id": "21405", name: "Bumblesweet", "images": []},
+        {"id": "21415", name: "Fizzypop", "images": []},
+        {"id": "21425", name: "Flower Wishes", "images": []},
+        {"id": "21435", name: "Roseluck", "images": []},
+        {"id": "21445", name: "Sweetie Blue", "images": []},
+        {"id": "21455", name: "Pepperdance", "images": []},
+        {"id": "21465", name: "Lemon Hearts", "images": []},
+        {"id": "21475", name: "Cherry Spices", "images": []},
+        {"id": "21485", name: "Sweetie Swirl", "images": []},
+        {"id": "21495", name: "Lucky Swirl", "images": []},
+        {"id": "22405", name: "Sweetcream Scoops", "images": []},
+        {"id": "22415", name: "Firecracker Burst", "images": []},
+        {"id": "22425", name: "Pinkie Pie (glittery/transparent)", "images": []},
+        {"id": "22435", name: "Twilight Sparkle (glittery/transparent)", "images": []},
+        {"id": "22445", name: "Rainbow Dash (glittery/transparent)", "images": []}
+    ]
+}

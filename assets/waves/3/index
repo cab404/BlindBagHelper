@@ -1,25 +1,29 @@
-#33aa22
-40512: Twilight Sparkle
-40522: Rarity
-40532: Bitta Luck
-40542: Rainbowshine
-40552: Goldengrape
-40562: Pinkie Pie (glowy)
-40572: Rainbow Dash
-40582: Golden Harvest
-40592: Sprinkle Stripe
-41502: Sea Swirl
-41512: Big MacIntosh
-41522: Twilight Sparkle (glowy)
-41532: Pinkie Pie
-41542: Apple Dazzle
-41552: Lovestruck
-41562: Berryshine
-41572: Meadow Song
-41582: Rarity (glowy)
-41592: Applejack
-42502: Fluttershy
-42512: Cherry Berry
-42522: Heartstrings
-42532: Noteworthy
-42542: Lucky Dreams
+{
+    "color": "#33aa22",    
+    "entries": [    
+        {"id": "40512", "name": "Twilight Sparkle", "images":[]}
+        {"id": "40522", "name": "Rarity", "images":[]},
+        {"id": "40532", "name": "Bitta Luck", "images":[]},
+        {"id": "40542", "name": "Rainbowshine", "images":[]},
+        {"id": "40552", "name": "Goldengrape", "images":[]},
+        {"id": "40562", "name": "Pinkie Pie (glowy)", "images":[]},
+        {"id": "40572", "name": "Rainbow Dash", "images":[]},
+        {"id": "40582", "name": "Golden Harvest", "images":[]},
+        {"id": "40592", "name": "Sprinkle Stripe", "images":[]},
+        {"id": "41502", "name": "Sea Swirl", "images":[]},
+        {"id": "41512", "name": "Big MacIntosh", "images":[]},
+        {"id": "41522", "name": "Twilight Sparkle (glowy)", "images":[]},
+        {"id": "41532", "name": "Pinkie Pie", "images":[]},
+        {"id": "41542", "name": "Apple Dazzle", "images":[]},
+        {"id": "41552", "name": "Lovestruck", "images":[]},
+        {"id": "41562", "name": "Berryshine", "images":[]},
+        {"id": "41572", "name": "Meadow Song", "images":[]},
+        {"id": "41582", "name": "Rarity (glowy)", "images":[]},
+        {"id": "41592", "name": "Applejack", "images":[]},
+        {"id": "42502", "name": "Fluttershy", "images":[]},
+        {"id": "42512", "name": "Cherry Berry", "images":[]},
+        {"id": "42522", "name": "Heartstrings", "images":[]},
+        {"id": "42532", "name": "Noteworthy", "images":[]},
+        {"id": "42542", "name": "Lucky Dreams", "images":[]}
+    ]    
+}
