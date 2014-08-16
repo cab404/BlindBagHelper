@@ -44,7 +44,7 @@ public class Blindbags extends Activity {
 		list.setAdapter(search_adapter);
 
 		/* Выбиралка волны */
-		waves = new ArrayList<>();
+		waves = new ArrayList();
 		for (Blindbag bag : Static.index)
 			if (!waves.contains(bag.wave))
 				waves.add(bag.wave);
@@ -86,7 +86,7 @@ public class Blindbags extends Activity {
 		List<Blindbag> reduced;
 
 		public SearchAdapter() {
-			reduced = new ArrayList<>();
+			reduced = new ArrayList();
 		}
 
 		public void search(String request) {

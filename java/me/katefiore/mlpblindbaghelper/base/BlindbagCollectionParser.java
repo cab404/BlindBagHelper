@@ -84,7 +84,7 @@ public class BlindbagCollectionParser {
 					));
 				}
 
-			} catch (IOException | NullPointerException | JSONException e) {
+			} catch (Exception e) {
 				Log.e("BlindbagCollectionParser", "Ошибка импорта блайнбэгов из папки " + wave, e);
 			}
 
