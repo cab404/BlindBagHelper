@@ -157,14 +157,13 @@ public class Blindbags extends Activity {
 										BitmapFactory.decodeStream(
 												getAssets()
 														.open(
-																BlindbagCollectionParser.WAVES + "/"
-																		+ blindbag.wave + "/"
-																		+ blindbag.id + ".png"
+																BlindbagCollectionParser.IMAGES + "/"
+																		+ blindbag.images[0]
 														)
 										)
 								)
 						);
-			} catch (IOException e) {
+			} catch (Exception e) {
 				/* если картинка не найдена, ставим иконку приложения. Лол.*/
 				Log.w("SearchAdapter", "Не найдена картинка для " + blindbag.wave + "." + blindbag.id);
 				((ImageView) convertView.findViewById(R.id.image)).setImageResource(R.drawable.ic_launcher);

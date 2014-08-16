@@ -39,10 +39,8 @@ public class BlindbagActivity extends Activity {
 		((TextView) findViewById(R.id.wave))
 				.setText(getString(R.string.wave) + " " + blindbag.wave);
 
-		addImage(BlindbagCollectionParser.WAVES + "/" + blindbag.wave + "/" + blindbag.id + ".png");
-
 		for (String img : blindbag.images) {
-			addImage(BlindbagCollectionParser.WAVES + "/" + blindbag.wave + "/" + img);
+			addImage(BlindbagCollectionParser.IMAGES + "/" + img);
 		}
 
 	}

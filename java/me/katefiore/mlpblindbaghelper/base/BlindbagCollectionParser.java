@@ -22,6 +22,7 @@ import java.util.List;
  */
 public class BlindbagCollectionParser {
 	public final static String WAVES = "waves", INDEX_FILE = "index";
+    public final static String IMAGES = "images";
 
 	private Context context;
 	public BlindbagCollectionParser(Context context) {
