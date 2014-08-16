@@ -72,7 +72,7 @@ public class BlindbagCollectionParser {
 					String[] images_array = new String[images.length()];
 
 					for (int j = 0; j < images.length(); j++) {
-						images_array[j] = images.getString(i);
+						images_array[j] = images.getString(j);
 					}
 
 					blindbags.add(new Blindbag(
