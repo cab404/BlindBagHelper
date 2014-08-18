@@ -32,10 +32,9 @@ public class BlindbagActivity extends Activity {
 
 
 		/* Выставляем всякую фигню. */
-		((TextView) findViewById(R.id.id))
+        setTitle(blindbag.name);
+        ((TextView) findViewById(R.id.id))
 				.setText(blindbag.id.toUpperCase());
-		((TextView) findViewById(R.id.title))
-				.setText(blindbag.name);
 		((TextView) findViewById(R.id.wave))
 				.setText(getString(R.string.wave) + " " + blindbag.wave);
 
