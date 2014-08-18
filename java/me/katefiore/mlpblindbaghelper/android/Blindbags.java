@@ -48,7 +48,7 @@ public class Blindbags extends Activity {
 		for (Blindbag bag : Static.index)
 			if (!waves.contains(bag.wave))
 				waves.add(bag.wave);
-		Collections.sort(waves);
+		Collections.sort(waves, Collections.reverseOrder());
 
 		ListView select_wave = (ListView) findViewById(R.id.wave_menu).findViewById(R.id.waves);
 		select_wave.setAdapter(new WaveListAdapter(waves));
