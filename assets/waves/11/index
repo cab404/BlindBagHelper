@@ -1,0 +1,29 @@
+{
+    "color": "#a67bce",
+    "entries": [
+        {"id": "aa", "name": "Fluttershy II", "images":["fluttershy_II.png", "inshow_fluttershy.jpg"]},
+        {"id": "ab", "name": "Pinkie Pie", "images":["pinkie_pie.png", "inshow_pinkie_pie.jpg"]},
+        {"id": "ac", "name": "Rainbow Dash", "images":["rainbow_dash.png", "inshow_rainbow_dash.jpg"]},
+        {"id": "ad", "name": "Sunset Shimmer", "images":["sunset_shimmer.png", "inshow_sunset_shimmer.jpg"]},
+        {"id": "ae", "name": "Flash Sentry", "images":["flash_sentry.png", "inshow_flash_sentry.jpg"]},
+        {"id": "af", "name": "Big Wig", "images":["big_wig.png", "inshow_big_wig.jpg"]},
+        {"id": "ag", "name": "Helia", "images":["helia.png", "inshow_helia.jpg"]},
+        {"id": "ah", "name": "Candy Apples", "images":["candy_apples.png", "inshow_candy_apples.jpg"]},
+        {"id": "ai", "name": "Purple Wave", "images":["purple_wave.png", "inshow_purple_wave.jpg"]},
+        {"id": "ak", "name": "Spitfire", "images":["spitfire.png", "inshow_spitfire.jpg"]},
+        {"id": "al", "name": "Neon Lights", "images":["neon_lights.png", "inshow_neon_lights.jpg"]},
+        {"id": "am", "name": "Wensley", "images":["wensley.png", "inshow_wensley.jpg"]},
+        {"id": "an", "name": "Cheese Sandwich", "images":["cheese_sandwich.png", "inshow_cheese_sandwich.jpg"]},
+        {"id": "ao", "name": "Cloud Chaser", "images":["cloud_chaser.png", "inshow_cloud_chaser.jpg"]},
+        {"id": "ap", "name": "Pursey Pink", "images":["pursey_pink.png", "inshow_pursey_pink.jpg"]},
+        {"id": "ar", "name": "Swanky Hank", "images":["swanky_hank.png", "inshow_swanky_hank.jpg"]},
+        {"id": "as", "name": "Buttonbelle", "images":["buttonbelle.png"]},
+        {"id": "at", "name": "Luckette", "images":["luckette.png", "inshow_luckette.jpg"]},
+        {"id": "au", "name": "Lilac Hearts", "images":["lilac_hearts.png"]},
+        {"id": "av", "name": "Royal Pin", "images":["royal_pin.png", "inshow_royal_pin.jpg"]},
+        {"id": "aw", "name": "Ruby Splash", "images":["ruby_splash.png", "inshow_ruby_splash.jpg"]},
+        {"id": "ax", "name": "Cloudia Breezie", "images":["cloudia_breezie.png"]},
+        {"id": "ay", "name": "Sunny Breezie", "images":["sunny_breezie.png"]},
+        {"id": "az", "name": "Lilac Breezie", "images":["lilac_breezie.png"]}
+    ]
+}
