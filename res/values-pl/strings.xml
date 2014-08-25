@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">MLP Blind Bag Helper</string>
-
 	<string name="wave">Wave</string>
 
 	<string name="search">Wyszukaj</string>
@@ -12,5 +10,8 @@
 		wprowadzić liczbę gwiazdek im równą. Poniżej znajdziesz przykłady pokazujące, gdzie możesz znaleźć nadrukowane
 		na saszetkach numery/litery:
 	</string>
+
+    <string name="rate">Ocenić aplikacji</string>
+    <string name="help_button">Informacje</string>
 
 </resources>

@@ -37,7 +37,6 @@ public class Blindbags extends Activity {
 		ListView list = (ListView) findViewById(R.id.results);
 
 		Static.index = new BlindbagCollectionParser(Blindbags.this).parse();
-		;
 
 		/* Поисковик по блайндбэгам */
 		search_adapter = new SearchAdapter();

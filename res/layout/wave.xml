@@ -7,8 +7,8 @@
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		android:gravity="center">
 	<ImageView
-			android:layout_width="64dp"
-			android:layout_height="64dp"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
 			android:id="@+id/image"
 			android:padding="2dp"/>
 	<TextView

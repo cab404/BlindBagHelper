@@ -5,10 +5,14 @@
           android:versionName="2.0"
           android:installLocation="auto">
 
-	<uses-sdk android:minSdkVersion="5"/>
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="20" />
 
-	<application android:label="@string/app_name"
-	             android:icon="@drawable/ic_launcher">
+	<application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
 		<activity android:name=".android.Blindbags"
 		          android:label="@string/app_name"
 		          android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
@@ -20,8 +24,11 @@
 			</intent-filter>
 		</activity>
 
-		<activity android:name=".android.Help" android:theme="@android:style/Theme.Dialog"/>
-		<activity android:name=".android.BlindbagActivity" android:theme="@android:style/Theme.Dialog"/>
+		<activity android:name=".android.Help"
+            android:theme="@android:style/Theme.Dialog"/>
+
+		<activity android:name=".android.BlindbagActivity"
+            android:theme="@android:style/Theme.Dialog"/>
 
 	</application>
 </manifest>
