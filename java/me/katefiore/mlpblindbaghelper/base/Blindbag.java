@@ -27,9 +27,9 @@ public class Blindbag implements Comparable<Blindbag> {
 
 	public boolean matchesPattern(String pattern) {
 
-		return (pattern.equalsIgnoreCase("wave:" + wave) ||               /* Выборка по волнам */
-				StringUtils.fast_match(pattern, id) ||                      /* Поиск по номеру */
-				name.toLowerCase().contains(pattern.toLowerCase()));        /* Поиск по имени */
+		return (pattern.equalsIgnoreCase("wave:" + wave) ||               				/* Выборка по волнам */
+				StringUtils.fast_match(pattern.toLowerCase(), id.toLowerCase()) ||		/* Поиск по номеру */
+				name.toLowerCase().contains(pattern.toLowerCase()));        			/* Поиск по имени */
 	}
 
 	/**
