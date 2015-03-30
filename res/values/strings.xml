@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">MLP Blind Bag Helper</string>
-
+    <string name="app_name" translatable="false">MLP Blind Bag Helper</string>
 	<string name="wave">Wave</string>
 
 	<string name="search">Search…</string>
@@ -16,6 +15,6 @@
 		Here are examples of where you can find the numbers/letters printed on the bags:
 	</string>
 
-	<string name="rate">Rate this app.</string>
+	<string name="rate">Rate this app</string>
 
 </resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wave">Wave</string>
+
+    <string name="search">Search…</string>
+    <string name="choose_wave">…or choose a wave.</string>
+    <string name="help_button">Help</string>
+
+	<string name="help_text">
+		This simple application will help you choose pony in Blind Bag. Just type number
+		from bag or name of pony or choose wave.
+		You can use stars in number for numbers you can\'t read.
+
+		Here are examples of where you can find the numbers/letters printed on the bags:
+	</string>
+
+    <string name="rate">Rate this app</string>
+
+</resources>
